@@ -1,7 +1,0 @@
-{
-    "version": "1.0.0",
-    "download_url": "https://clickcs.org/valheim_modpack/launcher/ClickCS-Valheim-Launcher-1.0.0.exe",
-    "sha256": "REPLACE_WITH_ACTUAL_HASH_RUN:  (Get-FileHash .\\exe -Algorithm SHA256).Hash.ToLower()",
-    "changelog_url": "https://clickcs.org/valheim_modpack/launcher/changelog.txt",
-    "mandatory": false
-}
