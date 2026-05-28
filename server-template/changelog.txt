@@ -1,0 +1,9 @@
+## v1.0.0 — Initial Release
+
+- BepInEx framework
+- [List your mods here]
+- [List config changes here]
+
+---
+
+(Add new versions at the top of this file)

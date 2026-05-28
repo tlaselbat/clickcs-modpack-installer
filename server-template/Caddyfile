@@ -1,0 +1,22 @@
+# Caddy configuration for ClickCS Valheim modpack hosting
+# Caddy handles HTTPS automatically via Let's Encrypt.
+# Install: https://caddyserver.com/docs/install
+# Run: caddy run --config Caddyfile
+
+mods.yourserver.com {  # <-- CHANGE THIS to your domain
+
+    root * /var/www/mods  # <-- CHANGE THIS to your web root
+
+    file_server
+
+    # Never cache manifest (players need latest)
+    header /valheim/manifest.json Cache-Control "no-cache, no-store, must-revalidate"
+
+    # Cache mod files for 24h
+    header /valheim/files/* Cache-Control "public, max-age=86400"
+
+    # Block directory listings
+    handle {
+        respond 404
+    }
+}
